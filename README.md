@@ -18,6 +18,7 @@ I want to automate insertion of file data (from N files) into a database to give
 - I have added multiple additional fields to the main object being stored versus original guide
 - I use MariaDB instead of the in-memory default database
 - I use a Spring profile via Application.properties
+- KnowledgeObjectItemProcessor.java is only left active as I plan to use it in future for transformations
 - I use multiple csv input files rather than a single csv file
 - I have modified the class BatchConfiguration.java to close the readers. When using the default gs code, I started getting repeated "too many open files" errors and the application while working initially stopped running. I have explicitly closed the readers once they are finished processing per Spring Batch documentation guidelines. The "too many open files" has  not re-occurred since the change
 
