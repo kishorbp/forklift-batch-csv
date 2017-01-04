@@ -53,12 +53,12 @@ public class BatchConfiguration
 		// http://docs.spring.io/spring-batch/apidocs/org/springframework/batch/item/file/MultiResourceItemReader.html
 		MultiResourceItemReader<KnowledgeObject> multiReader = new MultiResourceItemReader<KnowledgeObject>();
 		
-		PathMatchingResourcePatternResolver pathMatchinResolver = new PathMatchingResourcePatternResolver();
+		PathMatchingResourcePatternResolver patternMatchingResourceResolver = new PathMatchingResourcePatternResolver();
 		Resource[] resources;
 		try
 		{
 			// http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/core/io/support/PathMatchingResourcePatternResolver.html
-			resources = pathMatchinResolver.getResources("classpath:*.csv");
+			resources = patternMatchingResourceResolver.getResources("classpath:*.csv");
 			multiReader.setResources(resources);
 		}
 		catch (IOException e)
