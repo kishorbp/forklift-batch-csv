@@ -49,8 +49,10 @@ public class BatchConfiguration
 	@Bean
 	public MultiResourceItemReader<KnowledgeObject> reader()
 	{
-		// enable multiple file resource processing
+		// enable multiple file resource processing as I typically create multiple files instead of N records in a single csv file offline
+		// http://docs.spring.io/spring-batch/apidocs/org/springframework/batch/item/file/MultiResourceItemReader.html
 		MultiResourceItemReader<KnowledgeObject> multiReader = new MultiResourceItemReader<KnowledgeObject>();
+		
 		PathMatchingResourcePatternResolver pathMatchinResolver = new PathMatchingResourcePatternResolver();
 		Resource[] resources;
 		try
