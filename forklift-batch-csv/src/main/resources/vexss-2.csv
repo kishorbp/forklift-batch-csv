@@ -1,0 +1,2 @@
+mariadb,architecture,what is the max length of VARCHAR?,"Before mysql 5.0.3, it was 255. Since 5.0.3, it allows 65,535 bytes.",https://mariadb.com/kb/en/mariadb/varchar/
+google,howTo,how can we experiment with google machine learning apis?,You can use the following resources.,https://cloud.google.com/products/machine-learning/

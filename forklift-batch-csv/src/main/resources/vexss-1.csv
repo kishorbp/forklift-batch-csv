@@ -1,0 +1,3 @@
+spring,howTo,how do we configure logging in spring boot?,There are a few options to configure logging in Spring Boot.,https://docs.spring.io/spring-boot/docs/current/reference/html/howto-logging.html
+aws,architecture,how do we set up aws load balancing and https?,"You can use AWS ssl manager depending on your region. In addition, you can configure multiple instances and set up the load balancer using apache or nginx.",http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-create-https-ssl-load-balancer.html
+sap,feature,does the sap b2b addon support as2?,Yes. Refer to the web resource provided from the 7.5 help library.,https://help.sap.com/saphelp_nw75/helpdata/en/4b/9fea7d8e9b48a286f2b994445e496e/content.htm
